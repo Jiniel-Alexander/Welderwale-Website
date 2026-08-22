@@ -1,0 +1,26 @@
+{
+  "name": "weldervale-website",
+  "version": "1.0.0",
+  "description": "Welcome to the official repository for the **Welderwale** website.",
+  "main": "src/supabaseClient.js",
+  "type": "module",
+  "scripts": {
+    "test:supabase": "node testConnection.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiniel-Alexander/Welderwale-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiniel-Alexander/Welderwale-Website/issues"
+  },
+  "homepage": "https://github.com/Jiniel-Alexander/Welderwale-Website#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "dotenv": "^17.4.2"
+  }
+}

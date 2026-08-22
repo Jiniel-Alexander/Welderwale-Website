@@ -1,0 +1,15 @@
+﻿# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment Variables (Keep secrets safe!)
+.env
+.env.local
+.env.*.local
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
