@@ -1,7 +1,10 @@
-﻿# Dependencies
+# Dependencies
 node_modules/
 dist/
 build/
+.next/
+out/
+next-env.d.ts
 
 # Environment Variables (Keep secrets safe!)
 .env

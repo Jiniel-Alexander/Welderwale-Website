@@ -1,26 +1,46 @@
 {
   "name": "weldervale-website",
   "version": "1.0.0",
-  "description": "Welcome to the official repository for the **Welderwale** website.",
-  "main": "src/supabaseClient.js",
-  "type": "module",
+  "description": "Production-ready, mobile-first website and lightweight hybrid CMS for Welderwale metal fabrication services.",
   "scripts": {
-    "test:supabase": "node testConnection.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:supabase": "node testConnection.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jiniel-Alexander/Welderwale-Website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "welderwale",
+    "metal-fabrication",
+    "welding-services",
+    "nextjs",
+    "supabase",
+    "tailwind"
+  ],
+  "author": "Welderwale",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jiniel-Alexander/Welderwale-Website/issues"
-  },
-  "homepage": "https://github.com/Jiniel-Alexander/Welderwale-Website#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^2.112.3",
-    "dotenv": "^17.4.2"
+    "@supabase/supabase-js": "^2.48.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
   }
 }
