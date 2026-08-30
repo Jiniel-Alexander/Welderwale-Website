@@ -40,7 +40,7 @@ export default async function AdminDashboardPage() {
           <div className="flex items-center space-x-2.5">
             <span
               className={`w-2.5 h-2.5 rounded-full ${
-                isSupabaseConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'
+                isSupabaseConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-emerald-500'
               }`}
             />
             <span className="font-semibold text-slate-200">
@@ -126,7 +126,7 @@ export default async function AdminDashboardPage() {
           </Link>
 
           <Link
-            href="/admin/pages"
+            href="/admin/builder"
             className="p-5 rounded-card bg-slate-900 border border-slate-800 hover:border-brand-500/60 transition-all group"
           >
             <div className="flex items-center justify-between">
@@ -237,7 +237,7 @@ export default async function AdminDashboardPage() {
                 </Link>
 
                 <Link
-                  href="/admin/pages"
+                  href="/admin/builder"
                   className="w-full flex items-center justify-between p-3 rounded-btn bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-slate-200 transition-colors"
                 >
                   <span className="flex items-center space-x-2">

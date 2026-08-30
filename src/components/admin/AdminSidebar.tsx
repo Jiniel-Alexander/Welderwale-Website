@@ -14,7 +14,6 @@ import {
   Settings,
   Search,
   Globe,
-  LogOut,
   Sliders,
   ExternalLink
 } from 'lucide-react';
@@ -24,7 +23,7 @@ export const AdminSidebar: React.FC = () => {
 
   const menuItems = [
     { name: 'Dashboard', href: '/admin', icon: <LayoutDashboard className="w-4 h-4" /> },
-    { name: 'Page Builder', href: '/admin/pages', icon: <Sliders className="w-4 h-4" /> },
+    { name: 'Page Builder', href: '/admin/builder', icon: <Sliders className="w-4 h-4" /> },
     { name: 'Services Manager', href: '/admin/services', icon: <Wrench className="w-4 h-4" /> },
     { name: 'Portfolio & Projects', href: '/admin/projects', icon: <FolderKanban className="w-4 h-4" /> },
     { name: 'Gallery & Media', href: '/admin/gallery', icon: <ImageIcon className="w-4 h-4" /> },
