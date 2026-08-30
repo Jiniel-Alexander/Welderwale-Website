@@ -173,7 +173,7 @@ export const Footer: React.FC<FooterProps> = ({ company, services, locations }) 
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="mt-12 pt-6 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Welderwale. All rights reserved.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} Welderwale. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <Link href="/about" className="hover:text-slate-400">About Us</Link>
             <span>•</span>

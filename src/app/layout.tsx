@@ -60,11 +60,14 @@ export default async function RootLayout({
   const dynamicCss = generateCssVariables(theme);
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <style dangerouslySetInnerHTML={{ __html: dynamicCss }} />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-950 text-slate-100 antialiased pb-mobile-nav">
+      <body
+        className="min-h-screen flex flex-col bg-slate-950 text-slate-100 antialiased pb-mobile-nav"
+        suppressHydrationWarning
+      >
         <Header company={company} services={services} locations={locations} />
         <main className="flex-grow">{children}</main>
         <Footer company={company} services={services} locations={locations} />
