@@ -1,10 +1,10 @@
 import React from 'react';
-import { CompanySettings, Service, FaqItem } from '@/types';
+import { CompanySettings, Service, FaqItem, ServiceFaq } from '@/types';
 
 interface StructuredDataProps {
   company: CompanySettings;
   service?: Service;
-  faqs?: FaqItem[];
+  faqs?: (FaqItem | ServiceFaq | { question: string; answer: string })[];
   canonicalUrl?: string;
 }
 
