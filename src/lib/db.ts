@@ -1,18 +1,19 @@
 import { allServices } from '@/data/services';
 import { allProjects } from '@/data/projects';
 import { allLocations } from '@/data/locations';
-import { ServiceItem, ProjectItem, LeadSubmission } from '@/types';
+import { ServiceItem, ProjectItem, LeadSubmission, SeoIntegrations } from '@/types';
 import { supabase } from './supabaseClient';
 import fs from 'fs';
 import path from 'path';
 
-// Local disk fallback directory for leads, services, projects, settings, and theme
+// Local disk fallback directory for leads, services, projects, settings, theme, and integrations
 const DATA_DIR = path.join(process.cwd(), '.data');
 const LEADS_FILE = path.join(DATA_DIR, 'leads.json');
 const SERVICES_FILE = path.join(DATA_DIR, 'services.json');
 const PROJECTS_FILE = path.join(DATA_DIR, 'projects.json');
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json');
 const THEME_FILE = path.join(DATA_DIR, 'theme.json');
+const INTEGRATIONS_FILE = path.join(DATA_DIR, 'integrations.json');
 
 function ensureDataDir() {
   if (!fs.existsSync(DATA_DIR)) {
@@ -47,6 +48,21 @@ function ensureDataDir() {
       cardRadius: '0.75rem',
     };
     fs.writeFileSync(THEME_FILE, JSON.stringify(defaultTheme, null, 2));
+  }
+  if (!fs.existsSync(INTEGRATIONS_FILE)) {
+    const defaultIntegrations: SeoIntegrations = {
+      ga4Enabled: true,
+      ga4Id: process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX',
+      clarityEnabled: false,
+      clarityId: '',
+      gscVerification: '',
+      gtmEnabled: false,
+      gtmId: '',
+      metaPixelEnabled: false,
+      metaPixelId: '',
+      customHeadScript: '',
+    };
+    fs.writeFileSync(INTEGRATIONS_FILE, JSON.stringify(defaultIntegrations, null, 2));
   }
 }
 
@@ -347,4 +363,37 @@ export async function saveTheme(theme: Record<string, string>) {
   ensureDataDir();
   fs.writeFileSync(THEME_FILE, JSON.stringify(theme, null, 2));
   return theme;
+}
+
+// 5. SEO & ANALYTICS INTEGRATIONS
+export async function getIntegrations(): Promise<SeoIntegrations> {
+  ensureDataDir();
+  try {
+    const content = fs.readFileSync(INTEGRATIONS_FILE, 'utf-8');
+    return JSON.parse(content);
+  } catch {
+    return {
+      ga4Enabled: true,
+      ga4Id: process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX',
+      clarityEnabled: false,
+      clarityId: '',
+      gscVerification: '',
+      gtmEnabled: false,
+      gtmId: '',
+      metaPixelEnabled: false,
+      metaPixelId: '',
+      customHeadScript: '',
+    };
+  }
+}
+
+export async function saveIntegrations(integrations: Partial<SeoIntegrations>): Promise<SeoIntegrations> {
+  ensureDataDir();
+  const current = await getIntegrations();
+  const updated: SeoIntegrations = {
+    ...current,
+    ...integrations,
+  };
+  fs.writeFileSync(INTEGRATIONS_FILE, JSON.stringify(updated, null, 2));
+  return updated;
 }

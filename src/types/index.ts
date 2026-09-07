@@ -57,3 +57,16 @@ export interface LeadSubmission {
   status: 'New' | 'Contacted' | 'Site Visit' | 'Quotation' | 'Won' | 'Lost' | 'Closed';
   notes?: string[];
 }
+
+export interface SeoIntegrations {
+  ga4Enabled: boolean;
+  ga4Id: string;
+  clarityEnabled: boolean;
+  clarityId: string;
+  gscVerification: string;
+  gtmEnabled: boolean;
+  gtmId: string;
+  metaPixelEnabled: boolean;
+  metaPixelId: string;
+  customHeadScript?: string;
+}

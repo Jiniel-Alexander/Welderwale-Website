@@ -1,0 +1,12 @@
+{
+  "ga4Enabled": true,
+  "ga4Id": "G-TEST987654",
+  "clarityEnabled": true,
+  "clarityId": "clarity_test_key_888",
+  "gscVerification": "gsc_site_verify_token_999",
+  "gtmEnabled": true,
+  "gtmId": "GTM-TEST111",
+  "metaPixelEnabled": true,
+  "metaPixelId": "987654321098765",
+  "customHeadScript": ""
+}

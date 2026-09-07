@@ -7,6 +7,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     { name: 'Leads & Enquiries', href: '/admin/leads', icon: Users },
     { name: 'Services Manager', href: '/admin/services', icon: Wrench },
     { name: 'Projects & Portfolio', href: '/admin/projects', icon: ImageIcon },
+    { name: 'SEO & Analytics', href: '/admin/seo', icon: Globe },
     { name: 'Theme & Tokens', href: '/admin/theme', icon: Palette },
     { name: 'Company Settings', href: '/admin/settings', icon: Settings },
   ];

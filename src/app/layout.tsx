@@ -1,5 +1,5 @@
-import Script from 'next/script';
 import { LocalBusinessSchema } from '@/components/StructuredData';
+import AnalyticsScripts from '@/components/AnalyticsScripts';
 import './globals.css';
 
 export const metadata = {
@@ -35,34 +35,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
-
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <LocalBusinessSchema />
+        <AnalyticsScripts />
       </head>
       <body className="bg-background text-body font-sans antialiased">
-        {/* Google Analytics 4 Script (Loads when NEXT_PUBLIC_GA_ID is present in environment) */}
-        {gaId && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${gaId}', {
-                  page_path: window.location.pathname,
-                });
-              `}
-            </Script>
-          </>
-        )}
-
         {children}
       </body>
     </html>
