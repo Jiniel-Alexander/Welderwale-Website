@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getLeads, createLead } from '@/lib/db';
+import { processLeadNotifications } from '@/lib/notifications';
 import { z } from 'zod';
 
 const EnquirySchema = z.object({
@@ -27,6 +28,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const validated = EnquirySchema.parse(body);
 
+    // 1. Save Lead to Database Layer
     const savedLead = await createLead({
       service: validated.service,
       location: validated.location,
@@ -38,7 +40,22 @@ export async function POST(request: Request) {
       email: validated.email || '',
     });
 
-    return NextResponse.json({ success: true, lead: savedLead }, { status: 201 });
+    // 2. Trigger Email & WhatsApp Notification Engine
+    const notification = processLeadNotifications(savedLead);
+
+    return NextResponse.json(
+      {
+        success: true,
+        lead: savedLead,
+        notification: {
+          emailSent: notification.emailDispatched,
+          recipient: notification.emailRecipient,
+          whatsappUrl: notification.whatsappUrl,
+          whatsappMessage: notification.whatsappMessage,
+        },
+      },
+      { status: 201 }
+    );
   } catch (error: any) {
     if (error instanceof z.ZodError) {
       return NextResponse.json({ success: false, errors: error.issues }, { status: 400 });
