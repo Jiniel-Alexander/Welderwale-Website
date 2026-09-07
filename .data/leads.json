@@ -1,0 +1,45 @@
+[
+  {
+    "id": "lead_1788798185423",
+    "service": "Staircases",
+    "location": "Thane",
+    "area": "Ghodbunder Road",
+    "requirement": "Spiral staircase for duplex apartment with wooden treads and SS railing",
+    "fullName": "Vikram Mehta",
+    "phone": "9876501234",
+    "email": "vikram@example.com",
+    "status": "Site Visit",
+    "createdAt": "2026-09-07T16:23:05.423Z",
+    "notes": [
+      "[7/9/2026] Scheduled site visit for measurements on Saturday 11 AM"
+    ]
+  },
+  {
+    "id": "lead_1788798170247",
+    "service": "Staircases",
+    "location": "Thane",
+    "area": "Ghodbunder Road",
+    "requirement": "Spiral staircase for duplex apartment with wooden treads and SS railing",
+    "fullName": "Vikram Mehta",
+    "phone": "9876501234",
+    "email": "vikram@example.com",
+    "status": "Site Visit",
+    "createdAt": "2026-09-07T16:22:50.247Z",
+    "notes": [
+      "[7/9/2026] Scheduled site visit for measurements on Saturday 11 AM"
+    ]
+  },
+  {
+    "id": "lead_1788798057772",
+    "service": "Metal Gates",
+    "location": "Bhayandar",
+    "area": "Bhayandar East",
+    "requirement": "Heavy duty sliding gate 16x7 ft with Italian motor",
+    "fullName": "Rajesh Sharma",
+    "phone": "9820123456",
+    "email": "rajesh@example.com",
+    "status": "New",
+    "createdAt": "2026-09-07T16:20:57.772Z",
+    "notes": []
+  }
+]
