@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import EnquiryForm from '@/components/EnquiryForm';
 import { allServices } from '@/data/services';
+import { getServiceBySlug } from '@/lib/db';
 import { ShieldCheck, CheckCircle2, ArrowLeft, Phone, MessageSquare, ArrowRight } from 'lucide-react';
 
 interface Props {
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const service = allServices.find((s) => s.slug === slug);
+  const service = (await getServiceBySlug(slug)) || allServices.find((s) => s.slug === slug);
 
   if (!service) {
     return {
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ServiceDetailPage({ params }: Props) {
   const { slug } = await params;
-  const service = allServices.find((s) => s.slug === slug);
+  const service = (await getServiceBySlug(slug)) || allServices.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();

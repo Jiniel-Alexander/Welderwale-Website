@@ -1,0 +1,545 @@
+[
+  {
+    "id": "1",
+    "slug": "metal-gates",
+    "name": "Metal Gates",
+    "category": "Security & Access",
+    "tagline": "Custom Motorized, Sliding & Designer Wrought Iron / Steel Gates",
+    "shortDesc": "Heavy-duty industrial and aesthetic designer sliding, swing, and automatic metal gates fabricated to precision.",
+    "fullDesc": "Welderwale specializes in engineering high-security, rust-resistant metal gates tailored for residential bungalows, housing societies, industrial estates, and commercial complexes across Mumbai and Thane. Every gate is built using premium MS or GI pipes, heavy-gauge steel sheets, and certified MIG/TIG structural welds before finishing with anti-corrosive epoxy primer and UV-grade polyurethane paint.",
+    "featuredImage": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Material Grades",
+        "value": "MS (Mild Steel), GI (Galvanized Iron), SS 304/316"
+      },
+      {
+        "key": "Operation Type",
+        "value": "Manual Swing, Cantilever Sliding, Motorized Automatic"
+      },
+      {
+        "key": "Surface Treatment",
+        "value": "Zinc Phosphate Primer + Dual Coat PU Enamel"
+      },
+      {
+        "key": "Standard Height",
+        "value": "5 ft to 14 ft custom fabricated per site dimension"
+      }
+    ],
+    "applications": [
+      "Residential Bungalows & Row Houses",
+      "Housing Societies & Gated Communities",
+      "Factory Entrances & Warehouse Compounds",
+      "Commercial Malls & IT Park Access Points"
+    ],
+    "features": [
+      "Reinforced heavy-duty ball-bearing hinges and bottom tracks",
+      "Laser-cut custom architectural steel infill patterns available",
+      "Built-in wicket pass doors and intercom lock brackets",
+      "Designed to endure coastal humidity in Mumbai and Thane"
+    ],
+    "faqs": [
+      {
+        "question": "Do you provide motorization and automation for existing or new gates?",
+        "answer": "Yes, we fabricate and install heavy-duty motorized sliding mechanisms and articulated swing arm automated drives compatible with remote controls and RFID sensors."
+      },
+      {
+        "question": "How do you protect metal gates from rusting in Mumbai coastal climate?",
+        "answer": "We treat all metal surfaces with high-grade anti-rust red oxide or zinc chromate primers followed by durable polyurethane exterior weather-resistant paint coats."
+      }
+    ],
+    "isFeatured": true,
+    "order": 1
+  },
+  {
+    "id": "2",
+    "slug": "staircase",
+    "name": "Metal Staircases",
+    "category": "Structural Fabrication",
+    "tagline": "Spiral, Straight-Flight & Emergency External Fire Escapes",
+    "shortDesc": "Precision steel staircases engineered for residential duplexes, industrial mezzanines, and commercial emergency exits.",
+    "fullDesc": "Whether you require an architectural indoor floating mono-stringer staircase or a heavy-duty industrial exterior fire escape tower compliant with municipal fire codes, Welderwale designs, fabricates, and erects rigid steel stair systems with non-slip treads and sturdy safety balustrades.",
+    "featuredImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Structural Sections",
+        "value": "ISMC Channels, Heavy Hollow Rectangular Sections (RHS)"
+      },
+      {
+        "key": "Tread Types",
+        "value": "Chequered Diamond Plate, Perforated Metal, Wood/Stone Mounts"
+      },
+      {
+        "key": "Railing Infill",
+        "value": "Steel Balusters, Glass Clamps, Wire Rope Systems"
+      },
+      {
+        "key": "Load Rating",
+        "value": "Engineered for 3.0 kN/m² to 5.0 kN/m² live load"
+      }
+    ],
+    "applications": [
+      "Duplex Flats & Penthouse Internal Access",
+      "Industrial Mezzanine Floor Staircases",
+      "Commercial High-Rise Fire Escape Towers",
+      "Factory Maintenance Catwalk Access"
+    ],
+    "features": [
+      "Zero-wobble welded stringers and anchored baseplates",
+      "Modular prefabricated sections for rapid on-site assembly",
+      "Anti-slip serrated or chequered step profiles",
+      "Complete safety railing and handrail integration"
+    ],
+    "faqs": [
+      {
+        "question": "Can you fabricate a spiral staircase for tight residential spaces?",
+        "answer": "Yes, our central-column compact spiral staircases are engineered specifically for tight footprints starting from as small as 4x4 feet."
+      }
+    ],
+    "isFeatured": true,
+    "order": 2
+  },
+  {
+    "id": "3",
+    "slug": "metal-sheds",
+    "name": "Metal Sheds",
+    "category": "Heavy Fabrication",
+    "tagline": "Industrial Warehouse, Factory & Terrace Prefabricated Sheds",
+    "shortDesc": "Pre-engineered industrial steel sheds, factory workshop enclosures, and terrace rooftop protective structures.",
+    "fullDesc": "Welderwale manufactures sturdy structural steel sheds engineered for heavy wind zones, industrial storage, and residential terrace extensions. We handle everything from structural column fabrication and roof truss welding to corrugated color-coated profile sheeting and gutter downspouts.",
+    "featuredImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Truss Design",
+        "value": "Pratt, Warren, or Curved Bowstring Tubular Trusses"
+      },
+      {
+        "key": "Roofing Material",
+        "value": "PPGI / Galvalume 0.5mm Corrugated Color Coated Sheets"
+      },
+      {
+        "key": "Columns & Purlins",
+        "value": "Heavy MS Tubular & C/Z Purlin Profiles"
+      },
+      {
+        "key": "Anchor System",
+        "value": "Chemical Anchor Bolts & Concrete Foundation Pedestals"
+      }
+    ],
+    "applications": [
+      "Industrial Factories & Manufacturing Units",
+      "Logistics Warehouses & Storage Godowns",
+      "Terrace Rooftop Rain & Sun Protection",
+      "Automobile Service Centers & Parking Lots"
+    ],
+    "features": [
+      "High wind resistance rated for coastal squalls up to 140 km/h",
+      "Integrated rainwater harvesting gutters and downcomers",
+      "Polycarbonate natural daylight skylight panel integration",
+      "Fast-track erection with precision jig-welded trusses"
+    ],
+    "faqs": [
+      {
+        "question": "How long does it take to construct a terrace or warehouse shed?",
+        "answer": "Most terrace sheds (500 to 1,500 sq ft) are prefabricated in our workshop within 5–7 days and erected on-site in just 2–3 days."
+      }
+    ],
+    "isFeatured": true,
+    "order": 3
+  },
+  {
+    "id": "4",
+    "slug": "window-grill",
+    "name": "Window Grills",
+    "category": "Security & Safety",
+    "tagline": "Decorative & High-Security Anti-Rust Window Safety Grills",
+    "shortDesc": "High-security aesthetic anti-rust MS and SS protective safety grills for high-rise apartments and bungalows.",
+    "fullDesc": "Protect your family and enhance the facade of your building with Welderwale custom window safety grills. Manufactured from high-tensile solid bright square bars, flat steel bars, and stainless steel tubes, every grill is custom-measured to window jambs for seamless fit and tamper-proof anchoring.",
+    "featuredImage": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Bar Diameter",
+        "value": "10mm, 12mm, 16mm solid square / round bars"
+      },
+      {
+        "key": "Spacing",
+        "value": "3.5 to 4.5 inches clear distance (child-safe)"
+      },
+      {
+        "key": "Coating",
+        "value": "Pure Polyester Powder Coat or PU Enamel Paint"
+      },
+      {
+        "key": "Box Extensions",
+        "value": "Full-box, flower-pot ledge, or flat rebate mount"
+      }
+    ],
+    "applications": [
+      "High-Rise Housing Society Apartments",
+      "Independent Bungalows & Ground Floor Offices",
+      "School & College Safety Windows",
+      "AC Compressor Protective Cages"
+    ],
+    "features": [
+      "Child-safe bar spacing meeting modern housing society norms",
+      "Flower-pot planter trays and extended box grill designs available",
+      "Smooth hand-ground weld fillets for seamless aesthetics",
+      "Secure expansion through-wall anchor fasteners"
+    ],
+    "faqs": [
+      {
+        "question": "Can you match the window grill design required by our housing society?",
+        "answer": "Yes, we replicate housing society standardized grill blueprints precisely to ensure total architectural uniformity across your building facade."
+      }
+    ],
+    "isFeatured": true,
+    "order": 4
+  },
+  {
+    "id": "5",
+    "slug": "custom-metal-frames",
+    "name": "Custom Metal Frames & Installation",
+    "category": "Architectural Metal",
+    "tagline": "Precision Steel Frameworks for Partitions, Canopies & Equipment",
+    "shortDesc": "Engineered metal frameworks fabricated to exact CAD specifications for industrial, commercial, and interior applications.",
+    "fullDesc": "From glass partition steel mullions and architectural wall facades to heavy equipment support skids, Welderwale provides turnkey custom fabrication with millimeter tolerances.",
+    "featuredImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Tolerance",
+        "value": "±1.0 mm fabrication accuracy"
+      },
+      {
+        "key": "Welding",
+        "value": "MIG (GMAW) and TIG (GTAW) certified processes"
+      }
+    ],
+    "applications": [
+      "Office Glass Partitions",
+      "Solar Panel Mounts",
+      "Signage Frames"
+    ],
+    "features": [
+      "Custom CAD drawing review",
+      "Stress-relieved weld points",
+      "Fast turnaround"
+    ],
+    "faqs": [
+      {
+        "question": "Do you work with architects and interior designers?",
+        "answer": "Yes, we fabricate directly from architect drawings and site surveys."
+      }
+    ],
+    "isFeatured": false,
+    "order": 5
+  },
+  {
+    "id": "6",
+    "slug": "garden-pergola",
+    "name": "Garden Pergolas",
+    "category": "Outdoor & Living",
+    "tagline": "Modern Steel Pergolas, Gazebos & Terrace Canopy Structures",
+    "shortDesc": "Aesthetic weather-proof steel pergolas and terrace shade canopies designed for villas, rooftop lounges, and gardens.",
+    "fullDesc": "Transform outdoor spaces into elegant living areas with our custom metal pergolas with optional wood-composite cladding, tempered glass roofs, or motorized louvers.",
+    "featuredImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Frame",
+        "value": "Heavy MS Hollow Square Pipes with internal priming"
+      },
+      {
+        "key": "Roof Cover",
+        "value": "Toughened Laminated Glass / Polycarbonate Sheets"
+      }
+    ],
+    "applications": [
+      "Bungalow Lawns",
+      "Penthouse Terraces",
+      "Cafes & Outdoor Restaurants"
+    ],
+    "features": [
+      "Minimalist architectural silhouettes",
+      "Waterproof sealing and gutter integration"
+    ],
+    "faqs": [
+      {
+        "question": "Can pergolas support rain protection glass?",
+        "answer": "Yes, we design pergolas to support 10mm or 12mm laminated safety glass."
+      }
+    ],
+    "isFeatured": false,
+    "order": 6
+  },
+  {
+    "id": "7",
+    "slug": "metal-furniture",
+    "name": "Metal/Steel Furniture",
+    "category": "Interior & Commercial",
+    "tagline": "Industrial Minimalist Metal Tables, Desks, Racks & Storage",
+    "shortDesc": "Heavy-duty steel furniture, warehouse pallet racking, workbench tables, and designer minimalist steel desks.",
+    "fullDesc": "Custom fabricated metal furniture combining durability with industrial modern design. We craft warehouse storage racks, workbenches, restaurant table bases, and retail display units.",
+    "featuredImage": "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Finish",
+        "value": "Matte Black Powder Coat, Brushed SS, Brass Patina"
+      }
+    ],
+    "applications": [
+      "Warehouses",
+      "Restaurants & Cafes",
+      "Corporate Offices"
+    ],
+    "features": [
+      "Indestructible welded joints",
+      "Commercial heavy load capacity"
+    ],
+    "faqs": [
+      {
+        "question": "Do you accept bulk corporate orders?",
+        "answer": "Yes, we supply custom furniture and racks in bulk for commercial fit-outs."
+      }
+    ],
+    "isFeatured": false,
+    "order": 7
+  },
+  {
+    "id": "8",
+    "slug": "metal-railing",
+    "name": "Metal Railings",
+    "category": "Security & Safety",
+    "tagline": "Balcony Safety Railings, SS Glass Balustrades & Stair Handrails",
+    "shortDesc": "Architectural and safety railings manufactured in stainless steel (SS 304/316) and mild steel for balconies and stairs.",
+    "fullDesc": "Ensure site safety and modern aesthetics with Welderwale custom fabricated balcony railings, staircase handrails, and glass balustrades.",
+    "featuredImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Grades",
+        "value": "SS 304 for interiors, SS 316 for coastal exteriors"
+      }
+    ],
+    "applications": [
+      "Balconies",
+      "Internal Staircases",
+      "Commercial Terraces"
+    ],
+    "features": [
+      "Mirror or satin brush finish",
+      "Toughened glass spigot attachments"
+    ],
+    "faqs": [
+      {
+        "question": "Which SS grade is recommended for Mumbai?",
+        "answer": "We strongly recommend SS 316 for coastal zones like Bhayandar and Mumbai to prevent pitting."
+      }
+    ],
+    "isFeatured": false,
+    "order": 8
+  },
+  {
+    "id": "9",
+    "slug": "roofing-sheets",
+    "name": "Roofing Sheets Installation",
+    "category": "Roofing & Cladding",
+    "tagline": "Color-Coated Galvalume, Polycarbonate & UPVC Roofing Sheets",
+    "shortDesc": "Turnkey installation and structural framing for industrial color-coated roofing sheets and transparent skylights.",
+    "fullDesc": "Supply and precision installation of corrugated Galvalume roofing sheets, heat-reflective insulated sandwich panels, and polycarbonate domes.",
+    "featuredImage": "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Sheet Thickness",
+        "value": "0.45mm to 0.60mm Galvalume"
+      }
+    ],
+    "applications": [
+      "Warehouses",
+      "Factory Rooftops",
+      "Residential Terraces"
+    ],
+    "features": [
+      "Self-drilling EPDM washer screws",
+      "Zero water leakage guarantee"
+    ],
+    "faqs": [
+      {
+        "question": "Are color-coated sheets rust-proof?",
+        "answer": "Yes, Galvalume sheets contain an alloy of 55% Aluminum and 43.4% Zinc for exceptional corrosion protection."
+      }
+    ],
+    "isFeatured": false,
+    "order": 9
+  },
+  {
+    "id": "10",
+    "slug": "shutter",
+    "name": "Rolling Shutters",
+    "category": "Commercial Security",
+    "tagline": "Motorized & Manual Steel Rolling Shutters for Shops & Godowns",
+    "shortDesc": "Heavy-duty motorized and gear-operated steel rolling shutters fabricated for shopfronts, godowns, and loading bays.",
+    "fullDesc": "Protect commercial assets with Welderwale robust MS and galvanized rolling shutters, perforated display shutters, and motorized rapid-roll doors.",
+    "featuredImage": "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Slats",
+        "value": "18 Gauge to 22 Gauge cold-rolled steel"
+      }
+    ],
+    "applications": [
+      "Commercial Retail Shops",
+      "Industrial Godowns",
+      "Garage Entrances"
+    ],
+    "features": [
+      "Central key locks and side safety brackets",
+      "Smooth spring-loaded balancing"
+    ],
+    "faqs": [
+      {
+        "question": "Can existing manual shutters be converted to motorized?",
+        "answer": "Yes, we can retrofit central or side tubular motors onto existing roller shafts."
+      }
+    ],
+    "isFeatured": false,
+    "order": 10
+  },
+  {
+    "id": "11",
+    "slug": "unipole-structure",
+    "name": "Unipole Structure Fabrication",
+    "category": "Heavy Fabrication",
+    "tagline": "Heavy Advertising Unipoles, Hoardings & Gantry Steel Structures",
+    "shortDesc": "Heavy-duty advertising unipole structures and outdoor steel signboards engineered to withstand high wind loads.",
+    "fullDesc": "Engineering and site erection of large-format outdoor advertising unipoles, roadside gantries, and commercial rooftop display frameworks.",
+    "featuredImage": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Main Column",
+        "value": "High diameter heavy-wall steel pipes (350mm to 750mm)"
+      }
+    ],
+    "applications": [
+      "Highway Billboards",
+      "Commercial Hoardings",
+      "Toll Plaza Gantries"
+    ],
+    "features": [
+      "Structural engineer stability calculations",
+      "Deep pile anchor bolt systems"
+    ],
+    "faqs": [
+      {
+        "question": "Do you provide structural stability certifications?",
+        "answer": "Yes, all heavy unipoles are designed with civil foundation and wind-load calculations."
+      }
+    ],
+    "isFeatured": false,
+    "order": 11
+  },
+  {
+    "id": "12",
+    "slug": "animal-farm-sheds",
+    "name": "Animal Farm Sheds",
+    "category": "Agricultural Fabrication",
+    "tagline": "Ventilated Dairy, Poultry & Goat Farm Structural Steel Sheds",
+    "shortDesc": "Specially ventilated, durable metal sheds engineered for cattle dairy farms, poultry coops, and livestock protection.",
+    "fullDesc": "Agricultural metal shed fabrication designed for optimal air circulation, easy washdown, and rust-resistant livestock pens across outer Thane and rural belts.",
+    "featuredImage": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Ventilation",
+        "value": "Ridge vents and high eave clearances"
+      }
+    ],
+    "applications": [
+      "Dairy Farms (Tabela)",
+      "Poultry Farming",
+      "Goat Shelters"
+    ],
+    "features": [
+      "Ammonia-resistant protective paint coating",
+      "Sloped roof drainage away from feeding troughs"
+    ],
+    "faqs": [
+      {
+        "question": "What areas do you serve for farm sheds?",
+        "answer": "We construct farm sheds in Vasai, Virar, Kalyan, Bhiwandi, and surrounding districts."
+      }
+    ],
+    "isFeatured": false,
+    "order": 12
+  },
+  {
+    "id": "13",
+    "slug": "structural-fabrication",
+    "name": "Structural Fabrication & Heavy Welding",
+    "category": "Heavy Fabrication",
+    "tagline": "Beams, Columns, Mezzanine Floors & Heavy Plant Engineering",
+    "shortDesc": "Certified structural steel fabrication, heavy I-beam framing, industrial mezzanines, and precision welding.",
+    "fullDesc": "Comprehensive heavy structural welding services using I-beams, H-beams, and heavy plate fabrications. Certified welders for load-bearing civil and industrial infrastructure.",
+    "featuredImage": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80"
+    ],
+    "specifications": [
+      {
+        "key": "Welding Standards",
+        "value": "AWS D1.1 / IS 800 certified structural welders"
+      }
+    ],
+    "applications": [
+      "Industrial Plant Infrastructure",
+      "Mezzanine Floors",
+      "Building Retrofitting"
+    ],
+    "features": [
+      "Non-destructive weld testing ready",
+      "Heavy tonnage handling capacity"
+    ],
+    "faqs": [
+      {
+        "question": "Can you install industrial mezzanine floors without disrupting existing operations?",
+        "answer": "Yes, we fabricate modular bolt-together structural members in our shop for silent and fast on-site erection."
+      }
+    ],
+    "isFeatured": false,
+    "order": 13
+  }
+]

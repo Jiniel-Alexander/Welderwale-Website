@@ -1,21 +1,34 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import EnquiryForm from '@/components/EnquiryForm';
 import { allProjects } from '@/data/projects';
+import { ProjectItem } from '@/types';
 import { MapPin, Calendar, ArrowRight, Layers } from 'lucide-react';
 
 export default function OurWorkPage() {
   const [filter, setFilter] = useState('all');
+  const [projects, setProjects] = useState<ProjectItem[]>(allProjects);
+
+  useEffect(() => {
+    fetch('/api/projects')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.projects && data.projects.length > 0) {
+          setProjects(data.projects);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const filteredProjects =
     filter === 'all'
-      ? allProjects
-      : allProjects.filter((p) => p.serviceSlug === filter);
+      ? projects
+      : projects.filter((p) => p.serviceSlug === filter);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">

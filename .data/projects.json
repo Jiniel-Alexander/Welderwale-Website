@@ -1,0 +1,87 @@
+[
+  {
+    "id": "p1",
+    "slug": "motorized-cantilever-gate-bhayandar",
+    "title": "Custom Motorized Sliding Gate Installation",
+    "serviceSlug": "metal-gates",
+    "serviceName": "Metal Gates",
+    "location": "Bhayandar East, Thane",
+    "scope": "Fabrication of a 24-foot motorized cantilever steel gate with anti-corrosion primer and Italian gear motor integration.",
+    "completionDate": "January 2026",
+    "mainImage": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=1000&auto=format&fit=crop&q=80",
+    "beforeImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80",
+    "afterImage": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=800&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=800&auto=format&fit=crop&q=80"
+    ],
+    "summary": "Delivered an architectural sliding gate for a commercial logistics facility with zero ground-track friction.",
+    "details": [
+      "Grade A ISMC steel channel framework",
+      "Laser-cut geometric metal infill privacy screens",
+      "Tested with 1,000 continuous cycle open-close test"
+    ]
+  },
+  {
+    "id": "p2",
+    "slug": "duplex-spiral-staircase-borivali",
+    "title": "Architectural Spiral Steel Staircase",
+    "serviceSlug": "staircase",
+    "serviceName": "Metal Staircases",
+    "location": "Borivali West, Mumbai",
+    "scope": "Compact spiral staircase with central 8-inch pipe column, chequered steel treads, and curved SS balustrade for a penthouse duplex.",
+    "completionDate": "February 2026",
+    "mainImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1000&auto=format&fit=crop&q=80",
+    "beforeImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80",
+    "afterImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80"
+    ],
+    "summary": "Space-efficient spiral stair connecting living room to rooftop deck with matte black finish.",
+    "details": [
+      "Engineered for 350 kg point load per step",
+      "Precision welded handrails with seamless joints",
+      "Erected within 3 days on-site"
+    ]
+  },
+  {
+    "id": "p3",
+    "slug": "warehouse-curved-roof-shed-thane",
+    "title": "Heavy Industrial Warehouse Roofing Shed (8,000 sq ft)",
+    "serviceSlug": "metal-sheds",
+    "serviceName": "Metal Sheds",
+    "location": "Wagle Estate, Thane",
+    "scope": "Curved tubular truss roof shed with 0.50mm Galvalume corrugated color-coated profile sheets and turbo ventilators.",
+    "completionDate": "December 2025",
+    "mainImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&auto=format&fit=crop&q=80",
+    "beforeImage": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80",
+    "afterImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+    ],
+    "summary": "Heavy-duty industrial warehouse roof structure designed for torrential monsoon rain and high wind speeds.",
+    "details": [
+      "High wind tolerance calculated for 150 km/h squalls",
+      "Natural daylight skylight polycarbonate inserts",
+      "Leak-proof ridge cap and eave gutters"
+    ]
+  },
+  {
+    "id": "p4",
+    "slug": "high-rise-society-window-grills-kandivali",
+    "title": "Society Window Grills & Balcony Railings Retrofit",
+    "serviceSlug": "window-grill",
+    "serviceName": "Window Grills",
+    "location": "Kandivali East, Mumbai",
+    "scope": "Uniform box safety grills and balcony railings across 48 residential flats.",
+    "completionDate": "November 2025",
+    "mainImage": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=1000&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=800&auto=format&fit=crop&q=80"
+    ],
+    "summary": "Turnkey building exterior retrofit complying with society architectural guidelines.",
+    "details": [
+      "Pure polyester powder coat finish with 7-year anti-fading life",
+      "Expansion sleeve anchors tested to 500 kg pullout load"
+    ]
+  }
+]

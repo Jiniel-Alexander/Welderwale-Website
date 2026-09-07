@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileStickyBar from '@/components/MobileStickyBar';
-import { allServices } from '@/data/services';
+import { getServices } from '@/lib/db';
 import { ShieldCheck, ArrowRight, Phone, MessageSquare } from 'lucide-react';
 
 export const metadata = {
@@ -10,7 +10,11 @@ export const metadata = {
   description: 'Explore Welderwale 13 specialized metal fabrication services including gates, sheds, staircases, grills, pergolas, railings and heavy structural welding.',
 };
 
-export default function ServicesPage() {
+export const dynamic = 'force-dynamic';
+
+export default async function ServicesPage() {
+  const services = await getServices();
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -34,7 +38,7 @@ export default function ServicesPage() {
         {/* Services Grid */}
         <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {allServices.map((service) => (
+            {services.map((service) => (
               <div
                 key={service.id}
                 className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300"

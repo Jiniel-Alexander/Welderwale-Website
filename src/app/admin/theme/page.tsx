@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { Palette, Check, RefreshCw } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Palette, Check, RefreshCw, Save, AlertCircle } from 'lucide-react';
 
 export default function AdminThemePage() {
   const [primary, setPrimary] = useState('#1e293b');
@@ -9,10 +9,35 @@ export default function AdminThemePage() {
   const [btnRadius, setBtnRadius] = useState('0.5rem');
   const [saved, setSaved] = useState(false);
 
-  const handleSave = (e: React.FormEvent) => {
+  useEffect(() => {
+    fetch('/api/theme')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.theme) {
+          if (data.theme.primary) setPrimary(data.theme.primary);
+          if (data.theme.accent) setAccent(data.theme.accent);
+          if (data.theme.btnRadius) setBtnRadius(data.theme.btnRadius);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSaved(true);
-    setTimeout(() => setSaved(false), 2500);
+    try {
+      const res = await fetch('/api/theme', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ primary, accent, btnRadius }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSaved(true);
+        setTimeout(() => setSaved(false), 2500);
+      }
+    } catch {
+      // Local fallback
+    }
   };
 
   return (
@@ -71,66 +96,44 @@ export default function AdminThemePage() {
 
         <div>
           <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-            Button Corner Radius
+            Button & Card Corner Radius
           </label>
-          <div className="flex items-center gap-4">
-            {['0rem', '0.25rem', '0.5rem', '0.75rem', '9999px'].map((r) => (
+          <div className="grid grid-cols-3 gap-3">
+            {[
+              { label: 'Sharp (0.25rem)', value: '0.25rem' },
+              { label: 'Medium (0.5rem)', value: '0.5rem' },
+              { label: 'Pill / Rounded (1rem)', value: '1rem' },
+            ].map((opt) => (
               <button
                 type="button"
-                key={r}
-                onClick={() => setBtnRadius(r)}
-                style={{ borderRadius: r }}
-                className={`px-4 py-2 border text-xs font-bold transition ${
-                  btnRadius === r
-                    ? 'bg-slate-900 text-white border-slate-900'
-                    : 'bg-white text-slate-700 border-slate-200'
+                key={opt.value}
+                onClick={() => setBtnRadius(opt.value)}
+                className={`py-2.5 px-3 rounded-xl border text-xs font-semibold text-center transition ${
+                  btnRadius === opt.value
+                    ? 'border-blue-600 bg-blue-50 text-blue-700'
+                    : 'border-slate-200 hover:bg-slate-50 text-slate-700'
                 }`}
               >
-                {r === '9999px' ? 'Pill' : r}
+                {opt.label}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Live Mini Preview Box */}
-        <div className="p-4 rounded-xl border border-slate-100 bg-slate-50">
-          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-3">
-            Live Preview of Primary & Accent Tokens
-          </span>
-          <div className="flex items-center gap-3">
-            <button
-              type="button"
-              style={{ backgroundColor: accent, borderRadius: btnRadius }}
-              className="px-5 py-2.5 text-slate-950 font-bold text-xs shadow-sm"
-            >
-              Get Custom Quote
-            </button>
-            <button
-              type="button"
-              style={{ backgroundColor: primary, borderRadius: btnRadius }}
-              className="px-5 py-2.5 text-white font-semibold text-xs shadow-sm"
-            >
-              Explore Services
-            </button>
-          </div>
-        </div>
-
-        <div className="pt-2 flex items-center justify-between">
-          <span className="text-xs text-slate-500">
-            {saved ? (
-              <span className="text-emerald-600 font-bold flex items-center gap-1">
-                <Check className="w-4 h-4" /> Theme changes applied!
+        <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+          <div>
+            {saved && (
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg">
+                <Check className="w-3.5 h-3.5" /> Theme tokens saved!
               </span>
-            ) : (
-              'Changes update CSS custom properties.'
             )}
-          </span>
+          </div>
 
           <button
             type="submit"
-            className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition shadow"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition shadow"
           >
-            Save Theme Tokens
+            <Save className="w-4 h-4" /> Save Theme Tokens
           </button>
         </div>
       </form>
