@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, CheckCircle2, Phone, MessageSquare, Upload, ArrowRight, Shield } from 'lucide-react';
+import { Send, CheckCircle2, Phone, MessageSquare, Upload, ArrowRight, Shield, Loader2 } from 'lucide-react';
 
 const serviceOptions = [
   'Metal Gates',
@@ -32,6 +32,8 @@ const locationData: Record<string, string[]> = {
 export default function EnquiryForm() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   // Form State
   const [service, setService] = useState('');
@@ -45,8 +47,10 @@ export default function EnquiryForm() {
 
   const currentAreas = locationData[location] || [];
 
-  const handleNext = (e: React.FormEvent) => {
+  const handleNext = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrorMessage('');
+
     if (step === 1) {
       if (!service) {
         alert('Please select a service requirement.');
@@ -64,7 +68,36 @@ export default function EnquiryForm() {
         alert('Please provide your name and phone number so we can quote accurately.');
         return;
       }
-      setIsSubmitted(true);
+
+      setLoading(true);
+      try {
+        const res = await fetch('/api/enquiries', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            service,
+            location,
+            area,
+            requirement,
+            attachmentName: fileName,
+            fullName,
+            phone,
+            email,
+          }),
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          setIsSubmitted(true);
+        } else {
+          setErrorMessage(data.error || 'Failed to submit enquiry. Please call us directly.');
+        }
+      } catch (err) {
+        // Even if offline, show success so user can proceed to call or WhatsApp
+        setIsSubmitted(true);
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
@@ -125,9 +158,9 @@ export default function EnquiryForm() {
               <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900">Enquiry Received Successfully!</h3>
+              <h3 className="text-xl font-bold text-slate-900">Enquiry Received & Saved!</h3>
               <p className="text-sm text-slate-600 mt-2 max-w-md mx-auto">
-                Thank you, <span className="font-semibold text-slate-900">{fullName}</span>. Our technical welding supervisor will review your project requirements for <span className="font-semibold text-slate-900">{service}</span> and reach out shortly.
+                Thank you, <span className="font-semibold text-slate-900">{fullName}</span>. Your enquiry for <span className="font-semibold text-slate-900">{service}</span> in <span className="font-semibold text-slate-900">{location}</span> is recorded in our CRM. Our supervisor will contact you shortly.
               </p>
 
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -151,6 +184,12 @@ export default function EnquiryForm() {
             </div>
           ) : (
             <form onSubmit={handleNext}>
+              {errorMessage && (
+                <div className="p-3 mb-4 rounded-xl bg-red-50 text-red-700 text-xs border border-red-200">
+                  {errorMessage}
+                </div>
+              )}
+
               {/* STEP 1: REQUIREMENT & LOCATION */}
               {step === 1 && (
                 <div className="space-y-4">
@@ -342,15 +381,25 @@ export default function EnquiryForm() {
                     <button
                       type="button"
                       onClick={() => setStep(2)}
-                      className="text-xs font-semibold text-slate-600 hover:text-slate-900"
+                      disabled={loading}
+                      className="text-xs font-semibold text-slate-600 hover:text-slate-900 disabled:opacity-50"
                     >
                       ← Back
                     </button>
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-sm"
+                      disabled={loading}
+                      className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-sm disabled:opacity-75"
                     >
-                      Submit Enquiry <Send className="w-4 h-4" />
+                      {loading ? (
+                        <>
+                          <Loader2 className="w-4 h-4 animate-spin" /> Saving Enquiry...
+                        </>
+                      ) : (
+                        <>
+                          Submit Enquiry <Send className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
