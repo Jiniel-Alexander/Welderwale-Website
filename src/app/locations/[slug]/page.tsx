@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -16,6 +17,26 @@ export async function generateStaticParams() {
   return allLocations.map((l) => ({
     slug: l.slug,
   }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const loc = allLocations.find((l) => l.slug === slug);
+
+  if (!loc) {
+    return {
+      title: 'Location Hub Not Found',
+    };
+  }
+
+  return {
+    title: `Metal Fabrication in ${loc.name} | Welderwale`,
+    description: loc.metaDescription,
+    openGraph: {
+      title: `${loc.headline} | Welderwale`,
+      description: loc.metaDescription,
+    },
+  };
 }
 
 export default async function LocationDetailPage({ params }: Props) {

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -15,6 +16,27 @@ export async function generateStaticParams() {
   return allServices.map((s) => ({
     slug: s.slug,
   }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const service = allServices.find((s) => s.slug === slug);
+
+  if (!service) {
+    return {
+      title: 'Service Not Found',
+    };
+  }
+
+  return {
+    title: `${service.name} Fabrication & Installation in Mumbai & Thane`,
+    description: service.shortDesc,
+    openGraph: {
+      title: `${service.name} | Welderwale Fabrication`,
+      description: service.shortDesc,
+      images: [service.featuredImage],
+    },
+  };
 }
 
 export default async function ServiceDetailPage({ params }: Props) {
@@ -91,6 +113,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     src={service.featuredImage}
                     alt={service.name}
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                 </div>
               </div>
