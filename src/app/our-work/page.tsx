@@ -104,6 +104,8 @@ export default function OurWorkPage() {
                     src={project.mainImage}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-amber-400" />

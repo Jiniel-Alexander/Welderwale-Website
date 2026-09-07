@@ -129,6 +129,8 @@ export default function HeroSlider() {
                 src={slide.featuredImage}
                 alt={slide.name}
                 className="w-full h-full object-cover transition-opacity duration-700"
+                loading="eager"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-3 right-3 text-white">

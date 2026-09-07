@@ -49,7 +49,7 @@ const galleryItems: GalleryPhoto[] = [
     category: 'Workshop',
     title: 'Precision TIG & MIG Welding Setup',
     location: 'Bhayandar Fabrication Workshop',
-    url: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?w=800&auto=format&fit=crop&q=80',
+    url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80',
   },
   {
     id: 'g6',
@@ -116,6 +116,8 @@ export default function GalleryPage() {
                   src={item.url}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
 

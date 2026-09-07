@@ -114,6 +114,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     alt={service.name}
                     className="w-full h-full object-cover"
                     loading="eager"
+                    decoding="async"
                   />
                 </div>
               </div>

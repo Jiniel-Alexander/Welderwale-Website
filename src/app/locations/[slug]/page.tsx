@@ -139,6 +139,8 @@ export default async function LocationDetailPage({ params }: Props) {
                       src={s.featuredImage}
                       alt={s.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <h4 className="font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">

@@ -55,7 +55,7 @@ export const allProjects: ProjectItem[] = [
     scope: 'Curved tubular truss roof shed with 0.50mm Galvalume corrugated color-coated profile sheets and turbo ventilators.',
     completionDate: 'December 2025',
     mainImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&auto=format&fit=crop&q=80',
-    beforeImage: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?w=800&auto=format&fit=crop&q=80',
+    beforeImage: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80',
     afterImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80',
