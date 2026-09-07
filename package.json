@@ -1,0 +1,39 @@
+{
+  "name": "weldervale-website",
+  "version": "1.0.0",
+  "description": "This repository contains the project assets for **Welderwale** — a precision metal fabrication and structural welding contractor servicing Mumbai, Thane, and Bhayandar within a ~50 km radius.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiniel-Alexander/Welderwale-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiniel-Alexander/Welderwale-Website/issues"
+  },
+  "homepage": "https://github.com/Jiniel-Alexander/Welderwale-Website#readme",
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.115.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "autoprefixer": "^10.5.5",
+    "lucide-react": "^1.42.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "zod": "^4.5.4"
+  },
+  "dependencies": {
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
